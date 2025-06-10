@@ -1,7 +1,7 @@
 ![TypeScript](https://img.shields.io/badge/language-TypeScript-blue)
 ![Express](https://img.shields.io/badge/framework-Express-darkgreen)
 ![Python](https://img.shields.io/badge/Python-3.x-yellow)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-darkred.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # CoC-Base-Designer
 
