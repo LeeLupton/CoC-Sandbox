@@ -1528,53 +1528,63 @@
     "levels": [
       {
           "level": 1,
-          "dps": 140,
-          "dph": 200,
+          "dps": 125,
+          "dph": 350,
           "hp": 3600,
-          "cost": 7500000,
+          "cost": 8000000,
           "build_time": "7d",
           "exp": 777,
-          "th_required": 12
+          "th_required": 13
       },
       {
           "level": 2,
           "dps": 155,
-          "dph": 230,
-          "hp": 3800,
-          "cost": 8500000,
+          "dph": 240,
+          "hp": 4200,
+          "cost": 9000000,
           "build_time": "8d",
           "exp": 831,
-          "th_required": 12
+          "th_required": 13
       },
       {
           "level": 3,
-          "dps": 170,
-          "dph": 260,
-          "hp": 4000,
-          "cost": 9500000,
-          "build_time": "9d",
-          "exp": 887,
-          "th_required": 12
+          "dps": 175,
+          "dph": 490,
+          "hp": 4800,
+          "cost": 11000000,
+          "build_time": "8d 12h",
+          "exp": 856,
+          "th_required": 14
       },
       {
           "level": 4,
           "dps": 185,
-          "dph": 290,
-          "hp": 4200,
-          "cost": 10500000,
-          "build_time": "10d",
-          "exp": 943,
-          "th_required": 12
+          "dph": 519,
+          "hp": 5100,
+          "cost": 11500000,
+          "build_time": "8d 18h",
+          "exp": 869,
+          "th_required": 15
       },
       {
           "level": 5,
-          "dps": 200,
-          "dph": 320,
-          "hp": 4400,
-          "cost": 11500000,
-          "build_time": "11d",
-          "exp": 999,
-          "th_required": 12
+          "dps": 190,
+          "dph": 532,
+          "hp": 5410,
+          "cost": 12000000,
+          "build_time": "9d",
+          "exp": 881,
+          "th_required": 16
+      },
+      {
+          "level": 6,
+          "dps": 195,
+          "dph": 546,
+          "hp": 5600,
+          "cost": 22500000,
+          "build_time": "15d 18h",
+          "exp": 1166,
+          "th_required": 17
       }
   ],
     "range_max": 10.0,
