@@ -1527,66 +1527,56 @@
   "Scattershot": {
     "levels": [
       {
-        "build_time": "8,000,000",
-        "cost": 3600,
-        "dph": "300-400",
-        "dps": 125,
-        "exp": "7d",
-        "hp": "100-300",
-        "level": 1,
-        "th_required": 777
+          "level": 1,
+          "dps": 140,
+          "dph": 200,
+          "hp": 3600,
+          "cost": 7500000,
+          "build_time": "7d",
+          "exp": 777,
+          "th_required": 12
       },
       {
-        "build_time": "9,000,000",
-        "cost": 4200,
-        "dph": "360-480",
-        "dps": 150,
-        "exp": "8d",
-        "hp": "120-360",
-        "level": 2,
-        "th_required": 831
+          "level": 2,
+          "dps": 155,
+          "dph": 230,
+          "hp": 3800,
+          "cost": 8500000,
+          "build_time": "8d",
+          "exp": 831,
+          "th_required": 12
       },
       {
-        "build_time": "11,000,000",
-        "cost": 4800,
-        "dph": "420-560",
-        "dps": 175,
-        "exp": "8d 12h",
-        "hp": "140-420",
-        "level": 3,
-        "th_required": 856
+          "level": 3,
+          "dps": 170,
+          "dph": 260,
+          "hp": 4000,
+          "cost": 9500000,
+          "build_time": "9d",
+          "exp": 887,
+          "th_required": 12
       },
       {
-        "build_time": "11,500,000",
-        "cost": 5100,
-        "dph": "444-592",
-        "dps": 185,
-        "exp": "8d 18h",
-        "hp": "148-444",
-        "level": 4,
-        "th_required": 869
+          "level": 4,
+          "dps": 185,
+          "dph": 290,
+          "hp": 4200,
+          "cost": 10500000,
+          "build_time": "10d",
+          "exp": 943,
+          "th_required": 12
       },
       {
-        "build_time": "12,000,000",
-        "cost": 5410,
-        "dph": "456-608",
-        "dps": 190,
-        "exp": "9d",
-        "hp": "152-456",
-        "level": 5,
-        "th_required": 881
-      },
-      {
-        "build_time": "22,500,000",
-        "cost": 5600,
-        "dph": "468-624",
-        "dps": 195,
-        "exp": "15d 18h",
-        "hp": "156-468",
-        "level": 6,
-        "th_required": 1166
+          "level": 5,
+          "dps": 200,
+          "dph": 320,
+          "hp": 4400,
+          "cost": 11500000,
+          "build_time": "11d",
+          "exp": 999,
+          "th_required": 12
       }
-    ],
+  ],
     "range_max": 10.0,
     "range_min": 3.0
   },
