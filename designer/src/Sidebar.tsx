@@ -9,16 +9,16 @@ interface Props {
 
 export default function Sidebar({ active, onSelect }: Props) {
   const { buildings } = useContext(BuildingsContext);
-  if (!buildings) return <div className="sidebar">Loading...</div>;
+  if (!buildings) return <div className="sidebar p-2">Loading...</div>;
 
   const names = Object.keys(buildings) as Array<keyof Types>;
   return (
-    <div className="sidebar">
+    <div className="sidebar overflow-y-auto p-2 border-r" style={{ width: 150 }}>
       {names.map(n => (
         <div
           key={n}
+          className={`cursor-pointer p-1 ${active === n ? 'bg-gray-300' : ''}`}
           onClick={() => onSelect(active === n ? null : n)}
-          style={{ padding: '4px', cursor: 'pointer', background: active === n ? '#ddd' : undefined }}
         >
           {n}
         </div>

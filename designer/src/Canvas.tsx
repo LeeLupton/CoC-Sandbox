@@ -1,5 +1,6 @@
-import React from 'react';
-import { Stage, Layer, Line, Rect, Group } from 'react-konva';
+import React, { useContext } from 'react';
+import { Stage, Layer, Line, Rect, Group, Circle } from 'react-konva';
+import { BuildingsContext } from './BuildingsContext';
 import { Types } from './types';
 
 export interface BuildingInstance {
@@ -24,19 +25,25 @@ interface Props {
   setSelectedId: (id: number | null) => void;
   ghost: GhostPlacement | null;
   tileSize: number;
+  showGrid: boolean;
+  showRanges: boolean;
+  stageRef: React.RefObject<any>;
 }
 
 const GRID_SIZE = 20;
 
-export default function Canvas({ items, setItems, selectedId, setSelectedId, ghost, tileSize }: Props) {
+export default function Canvas({ items, setItems, selectedId, setSelectedId, ghost, tileSize, showGrid, showRanges, stageRef }: Props) {
   const width = GRID_SIZE * tileSize;
   const height = GRID_SIZE * tileSize;
+  const { buildings } = useContext(BuildingsContext);
 
   const lines: JSX.Element[] = [];
-  for (let i = 0; i <= GRID_SIZE; i++) {
-    const pos = i * tileSize;
-    lines.push(<Line key={`v${i}`} points={[pos, 0, pos, height]} stroke="#ccc" strokeWidth={1} />);
-    lines.push(<Line key={`h${i}`} points={[0, pos, width, pos]} stroke="#ccc" strokeWidth={1} />);
+  if (showGrid) {
+    for (let i = 0; i <= GRID_SIZE; i++) {
+      const pos = i * tileSize;
+      lines.push(<Line key={`v${i}`} points={[pos, 0, pos, height]} stroke="#ccc" strokeWidth={1} />);
+      lines.push(<Line key={`h${i}`} points={[0, pos, width, pos]} stroke="#ccc" strokeWidth={1} />);
+    }
   }
 
   const handleDragEnd = (id: number, e: any) => {
@@ -52,7 +59,7 @@ export default function Canvas({ items, setItems, selectedId, setSelectedId, gho
   };
 
   return (
-    <Stage width={width} height={height} onMouseMove={e => {
+    <Stage ref={stageRef} width={width} height={height} onMouseMove={e => {
       if (ghost) {
         ghost.x = Math.floor(e.evt.offsetX / tileSize) * tileSize;
         ghost.y = Math.floor(e.evt.offsetY / tileSize) * tileSize;
@@ -60,6 +67,16 @@ export default function Canvas({ items, setItems, selectedId, setSelectedId, gho
     }} onClick={handleStageClick}>
       <Layer>{lines}</Layer>
       <Layer>
+        {showRanges && buildings && items.map(b => {
+          const info: any = (buildings as any)[b.type];
+          let r = info?.range || info?.range_max || info?.range_ground || info?.range_single || info?.range_air_ground;
+          if (r) {
+            return (
+              <Circle key={b.id+"r"} x={b.x + tileSize/2} y={b.y + tileSize/2} radius={r * tileSize} stroke="red" strokeWidth={1} />
+            );
+          }
+          return null;
+        })}
         {items.map(b => (
           <Rect
             key={b.id}
