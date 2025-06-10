@@ -1,3 +1,6 @@
+![Language](https://img.shields.io/badge/language-TypeScript-blue)
+![Framework](https://img.shields.io/badge/framework-Express-green)
+
 # CoC-Base-Designer
 
 This repository holds data for Clash of Clans buildings.
@@ -21,3 +24,40 @@ The script prints `Validation successful.` when the file conforms to the schema 
 ## Generating TypeScript types
 
 Run `npm run generate-types` to regenerate the `src/types.ts` file from `all_buildings_with_ranges.json` using [quicktype](https://github.com/quicktype/quicktype).
+
+## Getting Started
+
+1. Install Node.js dependencies:
+
+```bash
+npm install
+cd api && npm install
+```
+
+2. Install Python dependencies:
+
+```bash
+pip install jsonschema
+```
+
+3. Generate TypeScript types and validate the building data:
+
+```bash
+npm run generate-types
+python3 scripts/validate_buildings.py
+```
+
+4. Start the API server:
+
+```bash
+cd api
+npm start
+```
+
+## Dependencies
+
+- Node.js (v20 recommended)
+- [Express](https://expressjs.com/) 5
+- [quicktype](https://github.com/quicktype/quicktype)
+- Python 3
+- [jsonschema](https://pypi.org/project/jsonschema/)
