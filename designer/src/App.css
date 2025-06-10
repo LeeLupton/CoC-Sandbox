@@ -1,10 +1,5 @@
-.sidebar {
-  width: 150px;
-  border-right: 1px solid #ccc;
-  overflow-y: auto;
-}
+.sidebar {}
 
 .inspector {
   width: 200px;
-  border-left: 1px solid #ccc;
 }

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { BuildingsContext } from './BuildingsContext';
 import { BuildingInstance } from './Canvas';
 
 interface Props {
@@ -7,10 +8,18 @@ interface Props {
 }
 
 export default function Inspector({ building, onChange }: Props) {
-  if (!building) return <div className="inspector">Select a building</div>;
+  const { buildings } = useContext(BuildingsContext);
+  if (!building) return <div className="inspector p-2">Select a building</div>;
+
+  let dps: number | undefined;
+  const info: any = (buildings as any)?.[building.type];
+  if (info?.levels) {
+    const lvl = info.levels.find((l: any) => l.level === building.level);
+    dps = lvl?.dps;
+  }
 
   return (
-    <div className="inspector" style={{ padding: '8px' }}>
+    <div className="inspector p-2 space-y-2">
       <div>
         Level:
         <input
@@ -21,6 +30,7 @@ export default function Inspector({ building, onChange }: Props) {
           onChange={e => onChange({ ...building, level: parseInt(e.target.value, 10) })}
         />
       </div>
+      {dps !== undefined && <div>DPS: {dps}</div>}
       <div>
         Rotation:
         <input
