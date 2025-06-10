@@ -372,200 +372,227 @@
   "BombTower": {
     "levels": [
       {
-        "build_time": "700,000",
-        "cost": 650,
-        "dph": 26.4,
-        "dps": 24,
-        "exp": "12h",
-        "hp": 150,
         "level": 1,
-        "th_required": 207
-      },
-      {
-        "build_time": "1,000,000",
-        "cost": 700,
-        "dph": 30.8,
-        "dps": 28,
-        "exp": "18h",
-        "hp": 180,
-        "level": 2,
-        "th_required": 254
-      },
-      {
-        "build_time": "1,300,000",
-        "cost": 750,
-        "dph": 35.2,
-        "dps": 32,
-        "exp": "1d",
-        "hp": 220,
-        "level": 3,
-        "th_required": 293
-      },
-      {
-        "build_time": "1,800,000",
-        "cost": 850,
-        "dph": 44,
-        "dps": 40,
-        "exp": "1d 12h",
-        "hp": 260,
-        "level": 4,
-        "th_required": 360
-      },
-      {
-        "build_time": "1,900,000",
-        "cost": 1050,
-        "dph": 52.8,
-        "dps": 48,
-        "exp": "1d 18h",
-        "hp": 300,
-        "level": 5,
-        "th_required": 388
-      },
-      {
-        "build_time": "2,000,000",
-        "cost": 1300,
-        "dph": 61.6,
-        "dps": 56,
-        "exp": "2d",
-        "hp": 350,
-        "level": 6,
-        "th_required": 415
-      },
-      {
-        "build_time": "4,000,000",
-        "cost": 1600,
-        "dph": 70.4,
-        "dps": 64,
-        "exp": "3d",
-        "hp": 400,
-        "level": 7,
-        "th_required": 509
-      },
-      {
-        "build_time": "5,000,000",
-        "cost": 1900,
-        "dph": 79.2,
-        "dps": 72,
-        "exp": "4d",
-        "hp": 450,
-        "level": 8,
-        "th_required": 587
-      },
-      {
-        "build_time": "6,000,000",
-        "cost": 2300,
-        "dph": 92.4,
-        "dps": 84,
-        "exp": "4d 12h",
-        "hp": 500,
-        "level": 9,
-        "th_required": 623
-      },
-      {
-        "build_time": "7,000,000",
-        "cost": 2500,
-        "dph": 103.4,
-        "dps": 94,
-        "exp": "5d",
-        "hp": 550,
-        "level": 10,
-        "th_required": 657
-      },
-      {
-        "build_time": "8,500,000",
-        "cost": 2700,
-        "dph": 114.4,
-        "dps": 104,
-        "exp": "6d 12h",
-        "hp": 600,
-        "level": 11,
-        "th_required": 749
-      },
-      {
-        "build_time": "20,000,000",
-        "cost": 2900,
-        "dph": 125.4,
-        "dps": 114,
-        "exp": "15d",
+        "dps": 24,
+        "dph": 26.4,
+        "destroyed_damage": 150,
         "hp": 650,
+        "cost": 700000,
+        "build_time": "12h",
+        "exp": 207,
+        "th_required": 8
+    },
+    {
+        "level": 2,
+        "dps": 28,
+        "dph": 30.8,
+        "destroyed_damage": 180,
+        "hp": 700,
+        "cost": 1000000,
+        "build_time": "18h",
+        "exp": 254,
+        "th_required": 8
+    },
+    {
+        "level": 3,
+        "dps": 32,
+        "dph": 35.2,
+        "destroyed_damage": 220,
+        "hp": 750,
+        "cost": 1300000,
+        "build_time": "1d",
+        "exp": 293,
+        "th_required": 9
+    },
+    {
+        "level": 4,
+        "dps": 40,
+        "dph": 44,
+        "destroyed_damage": 260,
+        "hp": 850,
+        "cost": 1800000,
+        "build_time": "1d 12h",
+        "exp": 360,
+        "th_required": 10
+    },
+    {
+        "level": 5,
+        "dps": 48,
+        "dph": 52.8,
+        "destroyed_damage": 300,
+        "hp": 1050,
+        "cost": 1900000,
+        "build_time": "1d 18h",
+        "exp": 388,
+        "th_required": 11
+    },
+    {
+        "level": 6,
+        "dps": 56,
+        "dph": 61.6,
+        "destroyed_damage": 350,
+        "hp": 1300,
+        "cost": 2000000,
+        "build_time": "2d",
+        "exp": 415,
+        "th_required": 11
+    },
+    {
+        "level": 7,
+        "dps": 64,
+        "dph": 70.4,
+        "destroyed_damage": 400,
+        "hp": 1600,
+        "cost": 4000000,
+        "build_time": "3d",
+        "exp": 509,
+        "th_required": 12
+    },
+    {
+        "level": 8,
+        "dps": 72,
+        "dph": 79.2,
+        "destroyed_damage": 450,
+        "hp": 1900,
+        "cost": 5000000,
+        "build_time": "4d",
+        "exp": 587,
+        "th_required": 13
+    },
+    {
+        "level": 9,
+        "dps": 84,
+        "dph": 92.4,
+        "destroyed_damage": 500,
+        "hp": 2300,
+        "cost": 6000000,
+        "build_time": "4d 12h",
+        "exp": 623,
+        "th_required": 14
+    },
+    {
+        "level": 10,
+        "dps": 94,
+        "dph": 103.4,
+        "destroyed_damage": 550,
+        "hp": 2500,
+        "cost": 7000000,
+        "build_time": "5d",
+        "exp": 657,
+        "th_required": 15
+    },
+    {
+        "level": 11,
+        "dps": 104,
+        "dph": 114.4,
+        "destroyed_damage": 600,
+        "hp": 2700,
+        "cost": 8500000,
+        "build_time": "6d 12h",
+        "exp": 749,
+        "th_required": 16
+    },
+    {
         "level": 12,
-        "th_required": 1099
-      }
-    ],
-    "range": 6.0
-  },
-  "BuildersHut": [
-    {
-      "build_time": "250",
-      "cost": "N/A",
-      "dph": "N/A",
-      "dps": "N/A",
-      "exp": "Varies**",
-      "hp": "N/A",
-      "level": 1,
-      "th_required": "None"
-    },
-    {
-      "build_time": "1,000",
-      "cost": 37.5,
-      "dph": 32,
-      "dps": 80,
-      "exp": 4000000,
-      "hp": 50,
-      "level": 2,
-      "th_required": "3d"
-    },
-    {
-      "build_time": "1,300",
-      "cost": 45,
-      "dph": 40,
-      "dps": 100,
-      "exp": 5000000,
-      "hp": 60,
-      "level": 3,
-      "th_required": "4d"
-    },
-    {
-      "build_time": "1,600",
-      "cost": 52.5,
-      "dph": 48,
-      "dps": 120,
-      "exp": 7000000,
-      "hp": 70,
-      "level": 4,
-      "th_required": "5d"
-    },
-    {
-      "build_time": "1,800",
-      "cost": 60,
-      "dph": 54,
-      "dps": 135,
-      "exp": 8000000,
-      "hp": 80,
-      "level": 5,
-      "th_required": "6d"
-    },
-    {
-      "build_time": "1,900",
-      "cost": 63.75,
-      "dph": 60,
-      "dps": 150,
-      "exp": 9000000,
-      "hp": 85,
-      "level": 6,
-      "th_required": "7d"
-    },
-    {
-      "build_time": "2,000",
-      "cost": 67.5,
-      "dph": 66,
-      "dps": 165,
-      "exp": 21000000,
-      "hp": 90,
-      "level": 7,
-      "th_required": "15d 6h"
+        "dps": 114,
+        "dph": 125.4,
+        "destroyed_damage": 650,
+        "hp": 2900,
+        "cost": 20000000,
+        "build_time": "15d",
+        "exp": 1099,
+        "th_required": 17
     }
   ],
+    "range": 6.0
+  },
+  "BuildersHut": {
+    "levels": [
+      {
+        "level": 1,
+        "dps": null,
+        "dph": null,
+        "rps": null,
+        "rph": null,
+        "hp": 250,
+        "cost": "Varies**",
+        "build_time": "None",
+        "exp": 0,
+        "th_required": 1
+      },
+      {
+        "level": 2,
+        "dps": 80,
+        "dph": 32,
+        "rps": 50,
+        "rph": 37.5,
+        "hp": 1000,
+        "cost": 4000000,
+        "build_time": "3d",
+        "exp": 509,
+        "th_required": 14
+      },
+      {
+        "level": 3,
+        "dps": 100,
+        "dph": 40,
+        "rps": 60,
+        "rph": 45,
+        "hp": 1300,
+        "cost": 5000000,
+        "build_time": "4d",
+        "exp": 587,
+        "th_required": 14
+      },
+      {
+        "level": 4,
+        "dps": 120,
+        "dph": 48,
+        "rps": 70,
+        "rph": 52.5,
+        "hp": 1600,
+        "cost": 7000000,
+        "build_time": "5d",
+        "exp": 657,
+        "th_required": 14
+      },
+      {
+        "level": 5,
+        "dps": 135,
+        "dph": 54,
+        "rps": 80,
+        "rph": 60,
+        "hp": 1800,
+        "cost": 8000000,
+        "build_time": "6d",
+        "exp": 720,
+        "th_required": 15
+      },
+      {
+        "level": 6,
+        "dps": 150,
+        "dph": 60,
+        "rps": 85,
+        "rph": 63.75,
+        "hp": 1900,
+        "cost": 9000000,
+        "build_time": "7d",
+        "exp": 777,
+        "th_required": 16
+      },
+      {
+        "level": 7,
+        "dps": 165,
+        "dph": 66,
+        "rps": 90,
+        "rph": 67.5,
+        "hp": 2000,
+        "cost": 21000000,
+        "build_time": "15d 6h",
+        "exp": 1147,
+        "th_required": 17
+      }
+    ],
   "Cannon": {
     "levels": [
       {
