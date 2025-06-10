@@ -1,0 +1,13 @@
+{
+  "name": "coc-api",
+  "version": "1.0.0",
+  "description": "API server for CoC building data and layout strings",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
