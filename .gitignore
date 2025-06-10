@@ -57,3 +57,4 @@ coverage/
 Thumbs.db
 desktop.ini
 
+api/node_modules/
