@@ -1,6 +1,8 @@
 ![TypeScript](https://img.shields.io/badge/language-TypeScript-blue)
 ![Express](https://img.shields.io/badge/framework-Express-green)
-![Python](https://img.shields.io/badge/language-Python-3.12-blue)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 # CoC-Base-Designer
 
 This repository holds data for Clash of Clans buildings.
