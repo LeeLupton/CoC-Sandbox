@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Clash of Clans buildings data",
+  "type": "object",
+  "patternProperties": {
+    ".*": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "levels": {
+              "type": "array",
+              "items": { "$ref": "#/definitions/level" }
+            },
+            "range": { "type": ["number", "string"] },
+            "range_ground": { "type": ["number", "string"] },
+            "range_air_ground": { "type": ["number", "string"] },
+            "range_max": { "type": ["number", "string"] },
+            "range_min": { "type": ["number", "string"] },
+            "range_single": { "type": ["number", "string"] },
+            "range_multi": { "type": ["number", "string"] }
+          },
+          "required": ["levels"],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": { "$ref": "#/definitions/level" }
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "level": {
+      "type": "object",
+      "properties": {
+        "level": { "type": ["number", "string"] },
+        "dps": { "type": ["number", "string", "null"] },
+        "dph": { "type": ["number", "string", "null"] },
+        "hp": { "type": ["number", "string", "null"] },
+        "cost": { "type": ["number", "string", "null"] },
+        "build_time": { "type": ["number", "string", "null"] },
+        "exp": { "type": ["number", "string", "null"] },
+        "th_required": { "type": ["number", "string", "null"] }
+      },
+      "required": ["level", "dps", "dph", "hp", "cost", "build_time", "exp", "th_required"],
+      "additionalProperties": false
+    }
+  }
+}
