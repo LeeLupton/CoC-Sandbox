@@ -1,0 +1,16 @@
+{
+  "name": "coc-sandbox",
+  "version": "1.0.0",
+  "description": "CoC-Base-Designer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-types": "quicktype -o src/types.ts all_buildings_with_ranges.json --just-types"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "quicktype": "^23.2.6"
+  }
+}

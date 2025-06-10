@@ -1,5 +1,10 @@
 # CoC-Base-Designer
 
+## Generating TypeScript types
+
+Run `npm run generate-types` to regenerate the `src/types.ts` file from `all_buildings_with_ranges.json` using [quicktype](https://github.com/quicktype/quicktype).
+=======
+
 ## Building Data Validation
 
 A JSON schema describing the format of `all_buildings_with_ranges.json` is
